@@ -3,8 +3,6 @@ let sum = 0;
 let average = 0;
 let contador=0;
 
-
-// Put your code here
 for (let item of numbers){
     sum=sum+item;
     contador++;
