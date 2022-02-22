@@ -1,7 +1,7 @@
-number = 0;
+let number = 0;
 
-function plusone(number) {
-    number = number + 1;
+function plusone(number_02) {
+    number = number_02 + 1;
     return number;
 }
 
