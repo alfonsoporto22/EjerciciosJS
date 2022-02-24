@@ -2,8 +2,8 @@ const phrase = "No hay bien que por mal no venga";
 const counters = {};
 /**
  * Devuelve el número de veces que aparece una letra dada
- * @param {string} letter 
- * @param {array} countersObject 
+ * @param {string} letter - Letra a buscar
+ * @param {array} countersObject - Array donde buscar
  * @returns {number}
  */
 function countLetter(letter, countersObject) {
@@ -25,5 +25,4 @@ for (letter of phrase) {
 
 console.log(frase);
 console.log(countLetter("m", frase));
-
 console.log(counters)
