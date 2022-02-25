@@ -21,6 +21,24 @@ const chrono = [
     },
 ]
 
-// Put your code here
+console.log(chrono.length);
+
+function sort(objeto){
+    for (let i = 0; i < objeto.length; i++) {
+        for (let j = i + 1; j < objeto.length; j++) {
+            if (objeto[i] > objeto[j]) {
+                let temporal = null;
+                temporal = objeto.time[i];
+                objeto.time[i] = objeto.time[j];
+                objeto.time[j] = temporal;
+            }
+        }
+    
+    }
+}
+sort(chrono.time);
+
+
+sort(chrono.length);
 
 console.log(JSON.stringify(chrono))
