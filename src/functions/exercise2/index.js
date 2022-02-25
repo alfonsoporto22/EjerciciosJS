@@ -5,6 +5,6 @@ function plusone(number_02) {
     return number;
 }
 
-plusone(number);
+plusone(5);
 
-console.log(number)
+console.log(number);

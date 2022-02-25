@@ -24,5 +24,5 @@ for (letter of phrase) {
 }
 
 console.log(frase);
-console.log(countLetter("m", frase));
+console.log(countLetter(" ", frase));
 console.log(counters)
