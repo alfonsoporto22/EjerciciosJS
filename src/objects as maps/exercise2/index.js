@@ -23,22 +23,24 @@ const chrono = [
 
 console.log(chrono.length);
 
-function sort(objeto){
-    for (let i = 0; i < objeto.length; i++) {
-        for (let j = i + 1; j < objeto.length; j++) {
-            if (objeto[i] > objeto[j]) {
-                let temporal = null;
-                temporal = objeto.time[i];
-                objeto.time[i] = objeto.time[j];
-                objeto.time[j] = temporal;
+function sort(objeto) {
+    for (runner of objeto) {
+        for (runner2 of objeto) {
+            if (runner.time > runner2.time) {
+                let temporal = runner.time;
+                runner.time = runner2.time;
+                runner2.time = temporal;
+
+                let temporal2 = runner.name;
+                runner.name = runner2.name;
+                runner2.name = temporal2;
             }
         }
-    
     }
+    console.log(objeto);
 }
-sort(chrono.time);
 
 
-sort(chrono.length);
+sort(chrono);
 
 console.log(JSON.stringify(chrono))
