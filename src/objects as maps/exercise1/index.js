@@ -6,7 +6,7 @@ const counters = {};
  * @param {array} countersObject - Array donde buscar
  * @returns {number}
  */
-function countLetter (letter, countersObject) {
+function countLetter(letter, countersObject) {
     let contador = 0;
     for (let i = 0; i < countersObject.length; i++) {
         if (countersObject[i] == letter) {
@@ -16,10 +16,13 @@ function countLetter (letter, countersObject) {
     return contador;
 }
 
-
+const frase = [];
 for (letter of phrase) {
+
+    frase.push(letter);
     countLetter(letter, counters)
-    counters[letter]=countLetter(letter,phrase);
 }
 
-console.log(counters);
+console.log(frase);
+console.log(countLetter(" ", frase));
+console.log(counters)
